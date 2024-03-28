@@ -584,6 +584,7 @@ header .swiper .swiper-slide img {
 }
 
 footer {
+  position: relative;
   color: #b9b9b9;
   background-color: #181818;
   padding: 6rem 0;
@@ -594,6 +595,17 @@ footer {
   footer {
     padding: 9rem 2rem 3rem 7rem;
   }
+}
+footer .validation {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+footer .validation a:nth-of-type(1) > img {
+  height: 4rem;
+}
+footer .validation a:nth-of-type(2) > img {
+  height: 4rem;
 }
 footer .footer-inner {
   position: relative;
