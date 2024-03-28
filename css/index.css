@@ -80,13 +80,13 @@ h3 {
   display: none;
 }
 .nav-button {
-  background-color: #c4e3ff;
+  background-color: #fffb21;
   width: 7rem;
   height: 6rem;
   position: fixed;
   z-index: 2000;
-  top: 7rem;
-  right: 8rem;
+  top: 10rem;
+  right: 0rem;
   cursor: pointer;
   border-radius: 2px;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
@@ -98,8 +98,8 @@ h3 {
   z-index: 1000;
   width: 7rem;
   height: 6rem;
-  top: 7rem;
-  right: 8rem;
+  top: 10rem;
+  right: 0rem;
   border: 2px;
   transition: all 0.8s;
 }
@@ -187,12 +187,21 @@ h3 {
 
 main .fx {
   width: 100%;
-  height: 42rem;
+  height: 50rem;
   flex-wrap: wrap;
 }
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  main .fx {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .fx {
+    flex-direction: column;
+  }
+}
 main .fx .section-1 {
-  background-color: #4d4d4d;
-  padding: 7rem 0 6.5rem 6rem;
+  background-color: #181818;
   width: 33.3%;
   height: 100%;
 }
@@ -314,10 +323,10 @@ main .fx .section-1-photo .photo img {
 }
 main .fx .section-2 {
   position: relative;
-  padding: 2rem;
+  padding: 6rem 2rem 2rem 2rem;
   width: 33.3333%;
   height: 100%;
-  background-color: #4d4d4d;
+  background-color: #181818;
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
   main .fx .section-2 {
@@ -360,7 +369,7 @@ main .fx .section-2 .swiper .swiper-wrapper a {
   color: #fff;
 }
 main .fx .section-2 .swiper .swiper-wrapper a p {
-  background-color: #4d4d4d;
+  background-color: #181818;
   padding: 2rem 0;
   font-size: 1.4rem;
 }
@@ -374,8 +383,8 @@ main .fx .section-3 {
   position: relative;
   width: 33.333%;
   height: 100%;
-  padding: 2rem;
-  background-color: #4d4d4d;
+  padding: 6rem 2rem 2rem 2rem;
+  background-color: #181818;
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
   main .fx .section-3 {
@@ -421,7 +430,7 @@ main .fx .section-3 .swiper .swiper-wrapper img {
      object-fit: cover;
 }
 main .fx .section-3 .swiper .swiper-wrapper p {
-  background-color: #4d4d4d;
+  background-color: #181818;
   padding: 2rem 0;
   font-size: 1.4rem;
   color: #fff;
@@ -520,6 +529,21 @@ header .gnb .gnb-list {
   padding-top: 1.7rem;
   margin-right: 50rem;
 }
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  header .gnb .gnb-list {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 899px) {
+  header .gnb .gnb-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  header .gnb .gnb-list {
+    display: none;
+  }
+}
 header .gnb .gnb-list li {
   padding-left: 2rem;
 }
@@ -561,10 +585,10 @@ header .swiper .swiper-slide img {
 
 footer {
   color: #b9b9b9;
-  background-color: #474747;
+  background-color: #181818;
   padding: 6rem 0;
   text-align: center;
-  height: 50rem;
+  height: 55rem;
 }
 @media screen and (max-width: 700px) {
   footer {

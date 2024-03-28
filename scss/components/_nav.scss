@@ -4,13 +4,13 @@
         display:none;
     }
     &-button{
-        background-color: #c4e3ff;
+        background-color: #fffb21;
         width:7rem;
         height:6rem;
         position:fixed;
         z-index:2000;
-        top:7rem;
-        right:8rem;
+        top:10rem;
+        right:0rem;
         cursor:pointer;
         border-radius:2px;
         box-shadow:0 1rem 1rem rgba(#000,.1);
@@ -22,8 +22,8 @@
         z-index:1000;
         width:7rem;
         height:6rem;
-        top:7rem;
-        right:8rem;
+        top:10rem;
+        right:0rem;
         border:2px;
         transition:all 0.8s;
     }

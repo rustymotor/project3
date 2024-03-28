@@ -1,12 +1,13 @@
 footer{
     color:$color-grey-light;
-    background-color: $color-grey-dark;
+    background-color: #181818;
     padding:6rem 0;
     text-align:center;
-    height:50rem;
+    height:55rem;
     @include mq('sm'){
         padding:9rem 2rem 3rem 7rem;
     }
+
     .footer-inner{
         position:relative;
         width:50%;
