@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+@import url(https://qwerewqwerew.github.io/source/style/reset.css);
 * {
   list-style: none;
   text-decoration: none;
@@ -23,21 +24,6 @@ body {
 
 html {
   font-size: 62.5%;
-}
-
-h2 {
-  padding: 1rem 0;
-  font-size: 2.4rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #285a91, #1f9cfd);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.5s;
-}
-h2:hover {
-  padding-left: 1.5rem;
 }
 
 h3 {
@@ -202,6 +188,7 @@ main .fx {
 }
 main .fx .section-1 {
   background-color: #181818;
+  padding: 7rem 0 6.5rem 6rem;
   width: 33.3%;
   height: 100%;
 }
@@ -226,10 +213,22 @@ main .fx .section-1 {
 }
 main .fx .section-1-top {
   display: flex;
+  align-items: center;
 }
-main .fx .section-1-top p {
+main .fx .section-1-top h2 > a {
+  font-size: 3rem;
+  color: #fff;
+  margin-right: 10rem;
+}
+main .fx .section-1-top p > a {
   color: #fff;
   font-size: 1.6rem;
+  margin-right: 3rem;
+}
+main .fx .section-1-top p > a.on {
+  color: #ffff00;
+  text-decoration: underline;
+  font-size: 2rem;
 }
 main .fx .section-1-words {
   width: 65%;
@@ -246,13 +245,34 @@ main .fx .section-1-words {
   }
 }
 main .fx .section-1-words li {
+  position: relative;
+  width: 50rem;
   padding: 1.5rem 0;
+  margin: 2rem 0;
   font-size: 1.4rem;
   font-weight: 700;
   text-align: justify;
 }
 main .fx .section-1-words li a {
   color: #fff;
+  font-size: 1.3rem;
+}
+main .fx .section-1-words li a .start {
+  position: absolute;
+  left: 0;
+  background-color: #1f9aca;
+  border-radius: 2rem;
+  padding: 0.1rem 0.8rem;
+}
+main .fx .section-1-words li a .mid {
+  position: absolute;
+  left: 10rem;
+  color: #d4d4d4;
+}
+main .fx .section-1-words li a .end {
+  position: absolute;
+  right: 0;
+  color: #5f5f5f;
 }
 main .fx .section-1-photo {
   position: relative;

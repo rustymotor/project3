@@ -1,3 +1,4 @@
+@import url(https://qwerewqwerew.github.io/source/style/reset.css);
 main {
   .fx{
     width:100%;
@@ -11,7 +12,7 @@ main {
     } //sm
   .section-1 {
     background-color: #181818;
-    // padding: 7rem 0 6.5rem 6rem;
+    padding: 7rem 0 6.5rem 6rem;
     width: 33.3%;
     height:100%;
 
@@ -30,10 +31,22 @@ main {
     } //sm
     &-top {
       display: flex;
-
-      p {
+      align-items: center;
+      h2>a{
+        font-size:3rem;
+        color:#fff;
+        margin-right:10rem;
+      }
+      p>a{
         color: $color-white;
         font-size: 1.6rem;
+        margin-right:3rem;
+      }
+      p>a.on{
+        color:#ffff00;
+        text-decoration: underline;
+        font-size:2rem;
+        
       }
     }
     &-words {
@@ -46,13 +59,34 @@ main {
         width: 100%;
       }
       li {
+        position:relative;
+        width:50rem;
         padding: 1.5rem 0;
+        margin:2rem 0;
         font-size: 1.4rem;
         font-weight: 700;
         text-align: justify;
 
         a {
           color: $color-white;
+          font-size:1.3rem;
+          .start{
+            position:absolute;
+            left:0;
+            background-color: #1f9aca;
+            border-radius: 2rem;
+            padding:0.1rem 0.8rem;
+          }
+          .mid{
+            position:absolute;
+            left:10rem;
+            color:#d4d4d4;
+          }
+          .end{
+            position:absolute;
+            right:0;
+            color:#5f5f5f;
+          }
         }
       }
     }

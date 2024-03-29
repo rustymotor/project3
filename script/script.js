@@ -83,3 +83,18 @@ var swiper = new Swiper(".mySwiper", {
       },
     });
 
+const notice=$('.section-1-top>p>a');
+console.log(notice);
+notice.on({
+  'mouseenter':function(){
+   
+    $(this).addClass('on');
+  },
+  'click':function(e){
+    e.preventDefault();
+    $(this).addClass('on');
+  },
+  'mouseleave':function(){
+    $(this).removeClass('on');
+  },
+})
