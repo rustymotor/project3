@@ -1,16 +1,16 @@
 @mixin mq($screen-width){
     @if $screen-width =='lg'{
-        @media screen and (min-width:900px) and (max-width:1200px){
+        @media screen and (min-width:1024px) and (max-width:3000px){
             @content;
         }
     }
     @else if $screen-width =='md'{
-        @media screen and (min-width:701px) and (max-width:899px) {
+        @media screen and (min-width:769px) and (max-width:1023px) {
             @content;
         }
     }
     @else if $screen-width =='sm'{
-        @media screen and (max-width:700px) {
+        @media screen and (max-width:768px) {
             @content;
         }
     }

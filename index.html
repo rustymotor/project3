@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <link rel="icon" href="./images/kart_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/btn.css">
 </head>
 <body>
+    <!-- <div class="popup">
+        <a href="https://www.youtube.com/watch?v=p5E-QfJqVzw&ab_channel=%EC%B9%B4%ED%8A%B8%EB%9D%BC%EC%9D%B4%EB%8D%94%3A%EB%93%9C%EB%A6%AC%ED%94%84%ED%8A%B8"></a>
+        <p>asdfasdfs</p>
+    </div> -->
     <nav class="nav">
         <input type="checkbox" class="nav-checkbox" id="nav-toggle">
         <label for="nav-toggle" class="nav-button">
@@ -50,7 +54,6 @@
             </ul>
             <div class="gameStart">게임 시작</div>
         </div>
-
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><img src="./images/gowmainbanner0.jpg" alt="#"></div>
@@ -61,10 +64,10 @@
     
             </div>
             <div class="swiper-button-next">
-                <img src="./images/btn_slide_next.png" alt="#">
+                <img src="./images/btn_slide_next.png" alt="next">
             </div>
             <div class="swiper-button-prev">
-                <img src="./images/btn_slide_prev.png" alt="#">
+                <img src="./images/btn_slide_prev.png" alt="prev">
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -91,110 +94,116 @@
                     </ul>
                 </div>
             </section>
-            <section class="section-2">
-                <div class="swiper patch_swiper">
-                    <ul class="swiper-wrapper">
-                        <li class="swiper-slide">
-                            <a href="#">
-                            <div class="thumb"><img src="./images/section2-1.jpg" alt="#"><p>블랙핑크 콜라보레이션</p></div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                            <div class="thumb"><img src="./images/section2-2.jpg" alt="#"><p>2024 등급전 안내</p></div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                            <div class="thumb"><img src="./images/section2-3.jpg" alt="#"><p>노르테유 신규트랙 원픽은?</p></div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                            <div class="thumb"><img src="./images/section2-4.jpg" alt="#"><p>3/21(목) 상점 안내</p></div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                            <div class="thumb"><img src="./images/section2-5.jpg" alt="#"><p>오리온이 왔다! 미션 이벤트 안내</p></div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                            <div class="thumb"><img src="./images/section2-6.jpg" alt="#"><p>이번주 이벤트 안내</p></div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                            <div class="thumb"><img src="./images/section2-7.jpg" alt="#"><p>24년 2차 레이싱 패스</p></div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                            <div class="thumb"><img src="./images/section2-8.jpg" alt="#"><p>노르테유 업데이트 이벤트</p></div>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <div class="swiper-button-next">
-                        <img src="./images/btn_slide_next.png" alt="#">
+            <div class="fx">
+                <section class="section-2">
+                    <div class="swiper patch_swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#">
+                                <div class="thumb"><img src="./images/section2-1.jpg" alt="#"><p>블랙핑크 콜라보레이션</p></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                <div class="thumb"><img src="./images/section2-2.jpg" alt="#"><p>2024 등급전 안내</p></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                <div class="thumb"><img src="./images/section2-3.jpg" alt="#"><p>노르테유 신규트랙 원픽은?</p></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                <div class="thumb"><img src="./images/section2-4.jpg" alt="#"><p>3/21(목) 상점 안내</p></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                <div class="thumb"><img src="./images/section2-5.jpg" alt="#"><p>오리온이 왔다! 미션 이벤트 안내</p></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                <div class="thumb"><img src="./images/section2-6.jpg" alt="#"><p>이번주 이벤트 안내</p></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                <div class="thumb"><img src="./images/section2-7.jpg" alt="#"><p>24년 2차 레이싱 패스</p></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                <div class="thumb"><img src="./images/section2-8.jpg" alt="#"><p>노르테유 업데이트 이벤트</p></div>
+                                </a>
+                            </li>
+                        </ul>
+                
+                        <div class="fx">
+                            <div class="swiper-button-next"><img src="./images/btn_slide_next.png" alt="next"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"><img src="./images/btn_slide_prev.png" alt="prev"></div>
+                            
+                        </div>
+                    </div> <!-- section2wrapper -->
+                </section> <!-- section2 -->
+                <section class="section-3">
+                    <div class="swiper event_swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#">
+                                <div class="thumb"><img src="./images/section3-1.jpg" alt="#"><p>쿠폰 안내</p></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                <div class="thumb"><img src="./images/section3-2.jpg" alt="#"><p>패치노트</p></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                <div class="thumb"><img src="./images/section3-3.png" alt="#"><p>쿠폰 안내</p></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                <div class="thumb"><img src="./images/section3-4.jpg" alt="#"><p>공지사항</p></div>
+                                </a>
+                            </li>
+                        </ul>
+                
+                        <div class="fx">
+                            <div class="swiper-button-next"><img src="./images/btn_slide_next.png" alt="next"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"><img src="./images/btn_slide_prev.png" alt="prev"></div>
+                        </div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination">
-                        <img src="./images/btn_slide_prev.png" alt="#">
-                    </div>
-                </div> <!-- section2wrapper -->
-            </section> <!-- section2 -->
-            <section class="section-3">
-                <div class="swiper event_swiper">
-                    <ul class="swiper-wrapper">
-                        <li class="swiper-slide">
-                            <a href="#">
-                            <div class="thumb"><img src="./images/section3-1.jpg" alt="#"><p>쿠폰 안내</p></div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                            <div class="thumb"><img src="./images/section3-2.jpg" alt="#"><p>패치노트</p></div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                            <div class="thumb"><img src="./images/section3-3.png" alt="#"><p>쿠폰 안내</p></div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="#">
-                            <div class="thumb"><img src="./images/section3-4.jpg" alt="#"><p>공지사항</p></div>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <div class="swiper-button-next">
-                        <img src="./images/btn_slide_next.png" alt="#">
-                    </div>
-                    <div class="swiper-button-prev">
-                        <img src="./images/btn_slide_prev.png" alt="#">
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-            
+                </section>
+                
+            </div>
         </div>
         <section class="section-4">
-            <div class="section-4-div youtube">
-                <img src="./images/section4-1.jpg" alt="#">
+            <div class="section-4-fx fx">
+                <div class="section-4-fx-div youtube">
+                    <img src="./images/section4-1.jpg" data-src="images/01.html" class="pic" alt="#">
+                </div>
+                <div class="section-4-fx-div discord">
+                    <img src="./images/section4-2.jpg" data-src="images/02.html" class="pic"alt="#">
+                </div>
             </div>
-            <div class="section-4-div discord">
-                <img src="./images/section4-2.jpg" alt="#">
-            </div>
-            <div class="section-4-div guide">
-                <img src="./images/section4-3.jpg" alt="#">
-            </div>
-            <div class="section-4-div faq">
-                <img src="./images/section4-4.jpg" alt="#">
+            <div class="section-4-fx fx">
+                <div class="section-4-fx-div guide">
+                    <img src="./images/section4-3.jpg" data-src="images/03.html" class="pic"alt="#">
+                </div>
+                <div class="section-4-fx-div faq">
+                    <img src="./images/section4-4.jpg" data-src="images/04.html" class="pic"alt="#">
+                </div>
             </div>
         </section>
+        <div id="lightbox">
+			<div id="lightboxImage"></div>
+		</div>
         <section class="section-5">
             <div class="section-5-btn1">
                 <img src="./images/facebook.png" alt="facebook">
