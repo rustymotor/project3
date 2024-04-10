@@ -189,30 +189,34 @@ main {
 main .fx {
   position: relative;
   width: 100%;
-  height: 50rem;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  main .fx {
+    flex-direction: row;
+    height: 50rem;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   main .fx {
-    flex-direction: column;
+    flex-direction: row;
     height: 100rem;
   }
 }
 @media screen and (max-width: 768px) {
   main .fx {
-    flex-direction: column;
-    height: 100rem;
+    flex-direction: row;
+    height: 150rem;
   }
 }
 main .fx .section-1 {
   background-color: #181818;
   padding: 7rem 0 6.5rem 6rem;
   width: 33.3%;
-  height: 100%;
 }
 @media screen and (min-width: 1024px) and (max-width: 3000px) {
   main .fx .section-1 {
-    width: 100%;
+    width: 33.3%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -262,16 +266,30 @@ main .fx .section-1-words {
     width: 100%;
   }
 }
-main .fx .section-1-words li {
+main .fx .section-1-words-list li {
   position: relative;
-  width: 50rem;
   height: 5rem;
   padding: 1.5rem 0;
   font-size: 1.4rem;
   font-weight: 700;
   text-align: justify;
 }
-main .fx .section-1-words li:not(:last-child):before {
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  main .fx .section-1-words-list li {
+    width: 50rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  main .fx .section-1-words-list li {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .fx .section-1-words-list li {
+    width: 100%;
+  }
+}
+main .fx .section-1-words-list li:not(:last-child):before {
   position: absolute;
   content: "";
   width: 100%;
@@ -279,7 +297,7 @@ main .fx .section-1-words li:not(:last-child):before {
   top: 0;
   background-color: #535353;
 }
-main .fx .section-1-words li:after {
+main .fx .section-1-words-list li:after {
   position: absolute;
   content: "";
   width: 100%;
@@ -287,23 +305,23 @@ main .fx .section-1-words li:after {
   bottom: 0;
   background-color: #535353;
 }
-main .fx .section-1-words li a {
+main .fx .section-1-words-list li a {
   color: #fff;
   font-size: 1.3rem;
 }
-main .fx .section-1-words li a .start {
+main .fx .section-1-words-list li a .start {
   position: absolute;
   left: 0;
   background-color: #1f9aca;
   border-radius: 2rem;
   padding: 0.2rem 2rem;
 }
-main .fx .section-1-words li a .mid {
+main .fx .section-1-words-list li a .mid {
   position: absolute;
   left: 13rem;
   color: #d4d4d4;
 }
-main .fx .section-1-words li a .end {
+main .fx .section-1-words-list li a .end {
   position: absolute;
   right: 0;
   color: #5f5f5f;
@@ -375,116 +393,190 @@ main .fx .section-1-photo .photo img {
   height: 100%;
   box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.5);
 }
-main .fx .section-2 {
-  position: relative;
-  padding: 6rem 2rem 2rem 2rem;
-  width: 33.3333%;
+main .fx .fx {
+  display: flex;
   height: 100%;
-  background-color: #181818;
 }
 @media screen and (min-width: 1024px) and (max-width: 3000px) {
-  main .fx .section-2 {
+  main .fx .fx {
+    width: 66.7%;
     display: flex;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-  main .fx .section-2 {
+  main .fx .fx {
+    width: 100%;
     display: flex;
   }
 }
 @media screen and (max-width: 768px) {
-  main .fx .section-2 {
+  main .fx .fx {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+main .fx .fx .section-2 {
+  position: relative;
+  padding: 6rem 2rem 2rem 2rem;
+  width: 50%;
+  height: 100%;
+  background-color: #181818;
+}
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  main .fx .fx .section-2 {
+    width: 50%;
+    display: flex;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  main .fx .fx .section-2 {
+    width: 50%;
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .fx .fx .section-2 {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
 }
-main .fx .section-2 .swiper {
-  position: relative;
+main .fx .fx .section-2 .swiper {
   width: 100%;
   height: 40rem;
 }
-main .fx .section-2 .swiper .swiper-pagination {
-  position: absolute;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 400;
-  width: 2rem;
-  margin: 0 0 10% 90%;
-}
-main .fx .section-2 .swiper .swiper-wrapper {
+main .fx .fx .section-2 .swiper .swiper-wrapper {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-main .fx .section-2 .swiper .swiper-wrapper a {
+main .fx .fx .section-2 .swiper .swiper-wrapper a {
   color: #fff;
 }
-main .fx .section-2 .swiper .swiper-wrapper a p {
+main .fx .fx .section-2 .swiper .swiper-wrapper a p {
   background-color: #181818;
   padding: 2rem 0;
   font-size: 1.4rem;
 }
-main .fx .section-2 .swiper .swiper-wrapper a img {
+main .fx .fx .section-2 .swiper .swiper-wrapper a img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-main .fx .section-3 {
+main .fx .fx .section-2 .swiper .fx {
+  margin-top: 57%;
+  margin-left: 80%;
+  width: 8rem;
+  height: 3rem;
+  margin-bottom: 10rem;
+}
+main .fx .fx .section-2 .swiper .fx .swiper-button-prev {
+  position: absolute;
+  left: 0;
+}
+main .fx .fx .section-2 .swiper .fx .swiper-button-prev:after {
+  display: none;
+}
+main .fx .fx .section-2 .swiper .fx .swiper-button-prev img {
+  width: 1.5rem;
+}
+main .fx .fx .section-2 .swiper .fx .swiper-button-next {
+  position: absolute;
+  right: 0;
+}
+main .fx .fx .section-2 .swiper .fx .swiper-button-next:after {
+  display: none;
+}
+main .fx .fx .section-2 .swiper .fx .swiper-button-next img {
+  width: 1.5rem;
+}
+main .fx .fx .section-2 .swiper .fx .swiper-pagination {
+  color: white;
+  position: absolute;
+  font-size: 1.4rem;
+}
+main .fx .fx .section-3 {
   position: relative;
-  width: 33.333%;
+  width: 50%;
   height: 100%;
   padding: 6rem 2rem 2rem 2rem;
   background-color: #181818;
 }
 @media screen and (min-width: 1024px) and (max-width: 3000px) {
-  main .fx .section-3 {
-    width: 100%;
+  main .fx .fx .section-3 {
+    width: 50%;
     display: flex;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-  main .fx .section-3 {
-    width: 100%;
+  main .fx .fx .section-3 {
+    width: 50%;
     display: flex;
   }
 }
 @media screen and (max-width: 768px) {
-  main .fx .section-3 {
+  main .fx .fx .section-3 {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
 }
-main .fx .section-3 .swiper {
+main .fx .fx .section-3 .swiper {
   position: relative;
   width: 100%;
   height: 40rem;
 }
-main .fx .section-3 .swiper .swiper-pagination {
-  position: absolute;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 400;
-  width: 2rem;
-  margin: 0 0 10% 90%;
-}
-main .fx .section-3 .swiper .swiper-wrapper {
+main .fx .fx .section-3 .swiper .swiper-wrapper {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-main .fx .section-3 .swiper .swiper-wrapper img {
+main .fx .fx .section-3 .swiper .swiper-wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .fx .section-3 .swiper .swiper-wrapper p {
+main .fx .fx .section-3 .swiper .swiper-wrapper p {
   background-color: #181818;
   padding: 2rem 0;
   font-size: 1.4rem;
   color: #fff;
+}
+main .fx .fx .section-3 .fx {
+  margin-top: 57%;
+  margin-left: 80%;
+  width: 8rem;
+  height: 3rem;
+  margin-bottom: 10rem;
+}
+main .fx .fx .section-3 .fx .swiper-button-prev {
+  position: absolute;
+  left: 0;
+}
+main .fx .fx .section-3 .fx .swiper-button-prev:after {
+  display: none;
+}
+main .fx .fx .section-3 .fx .swiper-button-prev img {
+  width: 1.5rem;
+}
+main .fx .fx .section-3 .fx .swiper-button-next {
+  position: absolute;
+  right: 0;
+}
+main .fx .fx .section-3 .fx .swiper-button-next:after {
+  display: none;
+}
+main .fx .fx .section-3 .fx .swiper-button-next img {
+  width: 1.5rem;
+}
+main .fx .fx .section-3 .fx .swiper-pagination {
+  color: white;
+  position: absolute;
+  font-size: 1.4rem;
 }
 main .section-4 {
   position: relative;
@@ -504,8 +596,9 @@ main .section-4 {
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   main .section-4 {
     width: 100%;
-    height: 100rem;
-    display: flex;
+    height: 50rem;
+    margin-top: 10rem;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 768px) {
@@ -513,15 +606,40 @@ main .section-4 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 50rem;
   }
 }
-main .section-4-div {
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  main .section-4-fx {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  main .section-4-fx {
+    width: 100%;
+    height: 100rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .section-4-fx {
+    width: 100%;
+    height: 100rem;
+    margin-top: 50rem;
+    display: flex;
+  }
+}
+main .section-4-fx-div {
   position: relative;
-  width: 25%;
+  width: 50%;
   height: 80%;
   margin-top: 3rem;
 }
-main .section-4-div img {
+main .section-4-fx-div img {
+  position: absolute;
   width: 100%;
   padding: 2rem;
   background-color: #fff;
@@ -576,6 +694,29 @@ main .section-5 {
   width: 100%;
   height: 5rem;
   background-color: #fff;
+}
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  main .section-5 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  main .section-5 {
+    width: 100%;
+    height: 100rem;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .section-5 {
+    width: 100%;
+    height: 10rem;
+    margin-top: 100rem;
+    display: flex;
+  }
 }
 main .section-5-btn1, main .section-5-btn2, main .section-5-btn3 {
   width: 5rem;
